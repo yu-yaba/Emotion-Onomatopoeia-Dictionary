@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    letter-spacing: 0.02em!important;
+}
+.headerContainer {
+    padding: 1.5rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0.845);
+}
+
+.headerContainer > h1 {
+    color: white;
+    text-shadow: 5.5px 5.5px black;
+}
+
+.category {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.category a:hover{
+    text-decoration: none;
+    transform: scale(1.15);
+    transition: 0.2s linear; 
+}
+
+.categoryEmoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    padding: 0;
+    margin: 1rem 1rem;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 8.5px 8.5px  rgb(0, 0, 0);
+}
+
+.categoryEmoBox:hover {
+    border: solid 5px rgb(72, 140, 195);
+}
+
+.categoryUrl {
+    width: 50%;
+    height: 50%;
+}
+
+.big-box{
+    color: black;
+    padding: 2em 2em;
+    margin: 3em 3rem;
+    border-radius: 30px;
+    box-shadow: 8.5px 8.5px  rgb(0, 0, 0);
+
+}
+.big-box > h1, h3{
+    color: black;
+}
+.emoWordBox{
+    color: white!important;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    margin: 1em 1em;
+    border-radius: 1rem;
+}
+.pic {
+    width: 30vw;
+    margin: 1rem;
+    border-radius: 10px;
+}
+/* メディアクエリ */
+@media (min-width: 768px){
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .emoWordBox{
+        width: 35vw;
+        height: 30vh;
+        margin: 0.5rem 1rem;
+    }
+    .pic{
+        width: 50%;
+        margin: auto 0.1rem
+    }
+
+}
+
+/* 感情の色 */
+.bg-white{
+    background-color: white;
+}
+.bg-angry{
+    background-color: rgb(219, 0, 0);
+}
+.bg-happy{
+    background-color: rgb(235, 235, 0);
+}
+.bg-sad{
+    background-color:  rgb(0, 162, 255);
+}
+.bg-fearful{
+    background-color: green;
+}
+.bg-bad{
+    background-color: rgb(89, 0, 255);
+}
+.bg-surprised{
+    background-color: rgb(222, 0, 222);
+}
+.bg-disgusted{
+    background-color: rgb(230, 151, 4);
+}
